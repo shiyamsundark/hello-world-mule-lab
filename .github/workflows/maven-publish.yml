@@ -9,7 +9,7 @@ on:
 jobs:
   buildAndDeploy:
     runs-on: ubuntu-latest
-    Steps:
+    steps:
 #first, we need to checkout our mule application's code
       - name: Checkout repository
         uses: actions/checkout@v2
