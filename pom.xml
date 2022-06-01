@@ -37,7 +37,7 @@
 						<muleVersion>4.3.0</muleVersion>
 						<username>${env.PLATFORM_USERNAME}</username>
 						<password>${env.PLATFORM_PASSWORD}</password>
-						<applicationName>hello-world-mjones1</applicationName>
+						<applicationName>hello-world-shiyamv1</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>MICRO</workerType>
