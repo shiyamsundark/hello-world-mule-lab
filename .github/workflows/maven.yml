@@ -38,8 +38,10 @@ name: Sandbox/Mulesoft - Build and Deploy
             
 #           run: mvn clean package deploy -DmuleDeploy
 
-on: 
-  workflow_dispatch:
+on:
+ push:
+    branches: [ muletestv1 ]
+ workflow_dispatch:
 
 jobs:
   build:
