@@ -29,6 +29,9 @@ jobs:
               java-version: '11'
               distribution: 'adopt'
         - name: Publish package
+          env:
+            PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME }}
+            PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD }}
           run: |
             mvn deploy -DmuleDeploy \-Dmule.artifact=$artifactName \
             -Danypoint.username="$PLATFORM_USERNAME" \
