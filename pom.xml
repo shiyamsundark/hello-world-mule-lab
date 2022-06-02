@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>mulesampleprojectv1</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>demo-muleappv1</artifactId>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
-	<name>mulesampleprojectv1</name>
+	<name>demo-muleappv1</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.3.0</app.runtime>
-		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<app.runtime>4.3.0-20210622</app.runtime>
+		<mule.maven.plugin.version>3.5.2</mule.maven.plugin.version>
 	</properties>
 
- 	<build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -32,19 +30,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.4.0</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<applicationName>hello-worldv1</applicationName>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
-						<objectStoreV2>true</objectStoreV2>
-						<region>us-east-2</region>
-					</cloudHubDeployment>
-				</configuration>
+  				<cloudHubDeployment>
+  				<uri>https://anypoint.mulesoft.com</uri>
+  				<muleVersion>4.3.0</muleVersion>
+  				<username>${anypoint.username}</username>
+  				<password>${anypoint.password}</password>
+  				<applicationName>demo-muleappv1</applicationName>
+  				<environment>Sandbox</environment>
+  				<workerType>MICRO</workerType>
+  				<region>us-east-2</region>
+  				<workers>1</workers>
+  				<objectStoreV2>true</objectStoreV2>
+  				</cloudHubDeployment>
+  				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -78,10 +76,11 @@
 			<layout>default</layout>
 		</repository>
 	</repositories>
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>mulesoft-releases</id>
-			<name>mulesoft release repository</name>
+			<name>MuleSoft Releases Repository</name>
 			<layout>default</layout>
 			<url>https://repository.mulesoft.org/releases/</url>
 			<snapshots>
