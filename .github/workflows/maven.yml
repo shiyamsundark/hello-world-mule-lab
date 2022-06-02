@@ -28,7 +28,14 @@ jobs:
           with:
               java-version: '11'
               distribution: 'adopt'
+              
         - name: Publish package
+        
+          env:
+          
+            PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME }}
+            PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD }}
+            
           run: mvn clean package deploy -DmuleDeploy
         
         
