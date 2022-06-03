@@ -31,7 +31,7 @@ jobs:
     steps:   
       - uses: actions/checkout@v2
       - name: Sonar Analysis
-        run: mvn -B verify sonar:sonar
+        run: mvn clean verify sonar:sonar
         
 #   deploy:
 #     needs: [build,Sonar]
