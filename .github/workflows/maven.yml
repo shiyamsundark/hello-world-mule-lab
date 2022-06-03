@@ -25,10 +25,11 @@ jobs:
 #       - name: Build with Maven
 #         run: mvn -B package --file pom.xml
         
-  Sonar:
-#     needs: [build]
+ Sonar:
+    
     runs-on: ubuntu-latest
     steps:   
+      - uses: actions/checkout@v2
       - name: Sonar Analysis
         run: mvn -B verify sonar:sonar
         
