@@ -34,6 +34,11 @@
       <username>shiyamsundark</username>
       <password>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</password>
     </server>
+    <server>
+      <id>anypoint-exchange-v2</id>
+      <username>${anypoint.username}</username>
+      <password>${anypoint.password}</password>
+    </server>
   </servers>
   
 </settings>
