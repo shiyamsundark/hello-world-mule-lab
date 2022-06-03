@@ -36,8 +36,8 @@
     </server>
     <server>
       <id>anypoint-exchange-v2</id>
-      <username>${env.PLATFORM_USERNAME}</username>
-      <password>${env.PLATFORM_PASSWORD}</password>
+      <username>${env.USERNAME}</username>
+      <password>${env.PASSWORD}</password>
     </server>
   </servers>
   
