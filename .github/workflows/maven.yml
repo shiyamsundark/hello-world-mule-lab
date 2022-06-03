@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:   
       - name: Sonar Analysis
-        run: mvn clean verify sonar:sonar --file pom.xml
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=shiyamsundark_java-maven-sample-war -Dsonar.organization=shiyamsundark -Dsonar.host.url=https://sonarcloud.io:443 -Dsonar.login=$SONAR_TOKEN 
         
 #   deploy:
 #     needs: [build,Sonar]
