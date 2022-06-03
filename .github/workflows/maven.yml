@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:   
       - name: Sonar Analysis
-        run: mvn clean verify sonar:sonar
+        run: mvn clean verify sonar:sonar --file pom.xml
         
 #   deploy:
 #     needs: [build,Sonar]
