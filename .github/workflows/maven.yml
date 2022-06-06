@@ -11,6 +11,22 @@ env:
      
 jobs:
 
+#   Pre-Release:
+#     name: Pre-Release
+#     runs-on: ubuntu-latest
+#     outputs:
+#       versn: ${{ steps.versnid.outputs.versn }}
+#     steps:
+#       - uses: actions/checkout@v2
+#       - id: versnid
+#         run: |
+#           echo setting release version!!
+#           aws s3 cp s3://instidbucket/version/versionnew.cfg ${{ github.workspace }}/versions.cfg --region us-west-1  
+#           echo "${{ github.run_number }}" >> versions.cfg
+#           newversion=$(cat versions.cfg)
+#           echo $newversion
+#           echo "::set-output name=versn::$newversion"
+    
   Build:
        
        runs-on: ubuntu-latest
