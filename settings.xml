@@ -18,7 +18,7 @@
         <repository>
           <id>github</id>
           <name>GitHub shiyamsundark Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/shiyamsundark/java-maven-sample-war</url>
+          <url>https://maven.pkg.github.com/shiyamsundark/hello-world-mule-lab</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
