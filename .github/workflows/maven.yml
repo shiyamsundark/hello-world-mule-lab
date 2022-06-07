@@ -71,7 +71,7 @@ jobs:
               java-version: '11'
               distribution: 'adopt'
               
-        - name: Deploy Artifacts
+        - name: Deploy to Sandbox
         
           run: |
       
