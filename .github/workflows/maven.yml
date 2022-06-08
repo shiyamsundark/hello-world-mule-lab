@@ -13,15 +13,9 @@ env:
          
 jobs:
  
-#   Pre-Release:
-#     name: Pre-Release
-#     uses: ./.github/workflows/pre-release.yml
-#     secrets:
-#       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
-  
+
   Build:
-#        needs: [Pre-Release]
+
        runs-on: ubuntu-latest
        permissions:
         contents: read
@@ -40,7 +34,7 @@ jobs:
             run: mvn -B package --file pom.xml
 
           - name: Publish to GitHub Packages Apache Maven
-            run: mvn deploy -Dsnapshot.version=${{needs.Pre-Release.outputs.currentversion}} -s $GITHUB_WORKSPACE/settings.xml
+            run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
             
                      
   Sonar:
