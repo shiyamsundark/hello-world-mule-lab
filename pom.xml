@@ -4,7 +4,7 @@
 
 	<groupId>com.github.shiyamsundark</groupId>
 	<artifactId>demo-muleappv1</artifactId>
-	<version>1.0.6</version>
+	<version>1.0.7</version>
 	<packaging>mule-application</packaging>
 
 	<name>demo-muleappv1</name>
@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.3.0-20210622</app.runtime>
+		<app.runtime>4.4.0-20210622</app.runtime>
 		<mule.maven.plugin.version>3.5.2</mule.maven.plugin.version>
 		
 		<sonar.host.url>https://sonarcloud.io:443</sonar.host.url>
@@ -45,7 +45,7 @@
 				<configuration>
   				<cloudHubDeployment>
   				<uri>https://anypoint.mulesoft.com</uri>
-  				<muleVersion>4.3.0</muleVersion>
+  				<muleVersion>4.4.0</muleVersion>
   				<username>${anypoint.username}</username>
   				<password>${anypoint.password}</password>
   				<applicationName>demo-muleappv1</applicationName>
