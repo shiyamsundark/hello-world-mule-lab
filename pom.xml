@@ -4,7 +4,7 @@
 
 	<groupId>com.github.shiyamsundark</groupId>
 	<artifactId>demo-muleappv1</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6</version>
 	<packaging>mule-application</packaging>
 
 	<name>demo-muleappv1</name>
@@ -49,7 +49,7 @@
   				<username>${anypoint.username}</username>
   				<password>${anypoint.password}</password>
   				<applicationName>demo-muleappv1</applicationName>
-  				<environment>Sandbox</environment>
+  				<environment>Design</environment>
   				<workerType>MICRO</workerType>
   				<region>us-east-2</region>
   				<workers>1</workers>
